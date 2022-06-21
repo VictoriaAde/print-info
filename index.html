@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>print-info</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .btn {
+        padding: 2rem 3rem;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">PRINT INFO</button>
+    <h1 class="name"></h1>
+    <h2 class="height"></h2>
+    <h2 class="country"></h2>
+    <script>
+      function printInfo() {
+        document.querySelector(".name").textContent = "Name: Victoria Adedayo";
+        document.querySelector(".height").textContent = "Height: 6.8ft";
+        document.querySelector(".country").textContent = "Country: Nigerian";
+      }
+
+      document.querySelector(".btn").addEventListener("click", printInfo);
+    </script>
+  </body>
+</html>
